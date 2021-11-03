@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+   <html lang="en">
+
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Registered Users</title>
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+
+
+      <link rel="stylesheet" href="css/style.css">
+
+   </head>
+
+   <body>
+      <div class="wrapper">
+         <div class="users">
+            <div class="users-column users-column--left">
+               <div class="logo">
+                  <a href="#">
+                     <div class="logo__image">
+                        <img src="img/logo.png" alt="logo">
+                     </div>
+                     <p class="logo__text">Single sign-on (SSO)</p>
+                  </a>
+               </div>
+               <div class="welcome">
+                  <h2 class="welcome__subtitle">Registered users</h2>
+               </div>
+            </div>
+            <div class="users-column users-column--right">
+               <div class="users-content">
+
+               </div>
+               <div class="button">
+                  <a href="index.html" class="button">Back</a>
+               </div>
+            </div>
+         </div>
+      </div>
+      
+  
+   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+   <script type="module">
+
+      var firebaseConfig = {
+         apiKey: "AIzaSyAEt9Sq1syqKPhK38cQVv6UzAVnVPwGKDI",
+         authDomain: "fe-task9.firebaseapp.com",
+         projectId: "fe-task9",
+         storageBucket: "fe-task9.appspot.com",
+         messagingSenderId: "503160777581",
+         appId: "1:503160777581:web:395ee4829b3b8370100864"
+      };
+      
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      
+      // update firestore settings
+      firebase.firestore().settings({ timestampsInSnapshots: true});
+      
+   </script>
+   <script src="js/users.js"></script>
+   </body>
+
+   </html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+   <html lang="en">
+
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Frontend Everyday - Task9</title>
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+
+
+      <link rel="stylesheet" href="css/style.css">
+
+   </head>
+
+   <body>
+      <div class="wrapper">
+         <div class="frame">
+            <div class="frame-column frame-column--left">
+               <div class="logo">
+                  <a href="#">
+                     <div class="logo__image">
+                        <img src="img/logo.png" alt="logo">
+                     </div>
+                     <p class="logo__text">Single sign-on (SSO)</p>
+                  </a>
+               </div>
+               <div class="welcome">
+                  <h1 class="welcome__title">Welcome BAck !</h1>
+                  <h2 class="welcome__subtitle">Enter your ID and Password to continue</h2>
+               </div>
+            </div>
+            <div class="frame-column frame-column--right">
+   
+               <!-- SIGN IN form -->
+               <div class="sign-in" id="sign-in">
+                  <h2 class="sign-in__title"><span>Sign in</span><br>
+                     to Access the portal
+                  </h2>
+                  <h4 class="sign-in-message"></h4>
+                  <form action="" class="sign-in-form" id="sign-in-form">
+                     <div class="form__item">
+                        <input type="email" class="form-input form-input--email" id="sign-in-email" name="user-email" placeholder="Enter Email" required>
+                     </div>
+                     <div class="form__item">
+                        <input type="password" class="form-input form-input--password" id="sign-in-password" name="user-password" placeholder="Enter Password" required>
+                     </div>
+                     <div class="form__button">
+                        <button onclick="signIn()" class="form-button" type="submit">Login</button>
+                     </div>
+                  </form>
+                  <div class="sign-in-up">
+                     <a href="#" class="sign-in-up__link">Sign up</a>
+                  </div>
+               </div>
+   
+               <!-- SIGN UP form -->
+               <div class="sign-up" id="sign-up">
+                  <h2 class="sign-up__title"><span>Sign up</span><br>
+                     to create an account
+                  </h2>
+                  <h4 class="sign-up-message"></h4>
+                  <form class="sign-up-form" id="sign-up-form">
+                     <div class="form__item">
+                        <input type="email" class="form-input form-input--email" id="sign-up-email" name="user-email" placeholder="Enter Email" required>
+                     </div>
+                     <div class="form__item">
+                        <input type="password" class="form-input form-input--password" id="sign-up-password" name="user-password" placeholder="Enter Password" required>
+                     </div>
+                     <div class="form__button">
+                        <button onclick="signUp()" class="form-button" id="button" type="submit">Sign up</button>
+                     </div>
+                  </form>
+                  <div class="sign-in-up">
+                     <a href="#" class="sign-in-up__link">Login</a>
+                  </div>
+               </div>
+               <div class="copyright">
+                  <p class="copyright__text">Copyright © 2022 Commlink Info Tech Ltd. All rights reserved. </p>
+               </div>
+            </div>
+         </div>
+         <div class="button__block">
+            <div class="button button--users">
+               <a href="users.html" class="button">Registered Users</a>
+            </div>
+         </div>
+      </div>
+   
+      
+  
+   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+   <script type="module">
+
+      var firebaseConfig = {
+         apiKey: "AIzaSyAEt9Sq1syqKPhK38cQVv6UzAVnVPwGKDI",
+         authDomain: "fe-task9.firebaseapp.com",
+         projectId: "fe-task9",
+         storageBucket: "fe-task9.appspot.com",
+         messagingSenderId: "503160777581",
+         appId: "1:503160777581:web:395ee4829b3b8370100864"
+      };
+      
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+
+      // update firestore settings
+      firebase.firestore().settings({ timestampsInSnapshots: true});
+      
+   </script>
+   <script src="js/script.js"></script>
+   </body>
+
+   </html>
