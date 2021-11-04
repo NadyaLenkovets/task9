@@ -19,6 +19,7 @@ body {
    align-items: center;
    @media(max-width: 767px) {
       height: auto;
+      overflow-x: hidden;
    }
 }
 .frame,
@@ -355,36 +356,9 @@ color: #FFFFFF;
 
 //  ==========  users  ==========  //
 
-// .users {
-//    max-width: 1281px;
-//    max-height: 756px;
-//    height: 100%;
-//    width: 100%;
-//    background-color: #fafafa;
-//    border-radius: 25px 0px 0px 25px;
-//    display: flex;
-//    overflow: hidden;
-// }
-// .users-column {
-//    &--left {
-//       flex: 0 0 581px;
-//       padding: 43px 0px 0px 80px;
-//       background: url(../img/bg.png) no-repeat;
-//       background-position: top center;
-//       background-size: cover;
-//       position: relative;
-//    }
-//    &--right {
-//       flex: 1 1 auto;
-//       padding: 0px 0px 22px 0px;
-//       display: flex;
-//       flex-direction: column;
-//    }
-// }
 .users-content {
    max-width: 400px;
-
-   margin: auto;
+   margin: 40px auto 30px;
 }
 .users-content__item {
    margin: 0px 0px 15px 0px;

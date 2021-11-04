@@ -107,6 +107,7 @@ body {
 @media (max-width: 767px) {
   .wrapper {
     height: auto;
+    overflow-x: hidden;
   }
 }
 
@@ -524,7 +525,7 @@ body {
 
 .users-content {
   max-width: 400px;
-  margin: auto;
+  margin: 40px auto 30px;
 }
 
 .users-content__item {
