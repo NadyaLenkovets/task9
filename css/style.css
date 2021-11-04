@@ -524,8 +524,12 @@ body {
 }
 
 .users-content {
+  flex: 1 1 auto;
   max-width: 400px;
   margin: 40px auto 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .users-content__item {
